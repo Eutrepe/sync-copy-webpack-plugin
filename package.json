@@ -1,6 +1,6 @@
 {
   "name": "@eutrepe/sync-copy-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "description": "Modified version of 'copy-webpack-plugin v5.0.4' where I add 'sync' option for sync patterns resolve (that's all). Orginal plugin: 'https://github.com/webpack-contrib/copy-webpack-plugin'",
   "scripts": {
@@ -12,12 +12,16 @@
     "url": "git+https://github.com/Eutrepe/sync-copy-webpack-plugin.git"
   },
   "keywords": [
-    "npm"
+    "npm",
+    "webpack",
+    "copy",
+    "sync"
   ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Eutrepe/sync-copy-webpack-plugin/issues"
   },
+  "private": false,
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",

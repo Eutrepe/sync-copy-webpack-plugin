@@ -88,6 +88,7 @@ class SyncCopyPlugin {
           compilation.errors.push(error);
         })
         .then (() => {
+          logger.debug('finishing emit');
           callback();
         });
       } else {
@@ -116,15 +117,10 @@ class SyncCopyPlugin {
             compilation.errors.push(error);
           })
           .then(() => {
-            logger.debug('finishing emit');
-  
+            logger.debug('finishing emit');  
             callback();
           });
       }
-
-      
-
-
       
     });
     compiler.hooks.afterEmit.tapAsync(plugin, (compilation, callback) => {
